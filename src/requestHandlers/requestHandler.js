@@ -1,5 +1,4 @@
 const routes = require('../routes/routes');
-const url = require('url');
 
 const mainHandler = (req, res) => {
 	const { url } = req;
