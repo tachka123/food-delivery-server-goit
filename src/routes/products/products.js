@@ -5,10 +5,9 @@ const products = (req, res) => {
 		res.writeHead(405);
 		res.write('Method not allowed');
 		res.end();
-		console.log('Wrong method');
 		return;
 	}
-	fs.readFile('./assets/productsJson.json', 'utf-8', (err, data) => {
+	fs.readFile('./src/db/products/all-products.json', 'utf-8', (err, data) => {
 		if (err) {
 			res.writeHead(404);
 			res.write('File not found!');
@@ -18,7 +17,6 @@ const products = (req, res) => {
 		res.writeHead(200, { 'Content-Type': 'text/json' });
 		res.write(data);
 		res.end();
-		console.log('products GET completed');
 	});
 };
 

@@ -1,9 +1,12 @@
 const routes = require('../routes/routes');
+const morgan = require('morgan');
+
+const logger = morgan('combined');
 
 const mainHandler = (req, res) => {
 	const { url } = req;
 	const func = routes[url] || routes.defaultRoute;
-	func(req, res);
+	logger(req, res, () => func(req, res));
 };
 
 module.exports = mainHandler;
