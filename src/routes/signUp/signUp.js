@@ -7,19 +7,19 @@ const signUp = (req, res) => {
 		res.end();
 		return;
 	}
-	req.on('request', (req, res) => {
-		res.writeHead(201, { 'Content-Type': 'text/json' });
-	});
 	req.on('data', chunk => {
 		const { username, telephone, password, email } = JSON.parse(chunk);
 		if (username && telephone && password && email) {
 			fs.writeFile(`./src/db/users/${username}.json`, chunk.toString(), err => {
 				if (err) throw err;
 			});
-			req.on('end', () => {
-				res.write(JSON.stringify({ status: 'success', user: { username, telephone, password, email } }));
-				res.end();
-			});
+			res.writeHead(201, { 'Content-type': 'text/json' });
+			res.write(JSON.stringify({ status: 'success', user: { username, telephone, password, email } }));
+			res.end();
+		} else {
+			res.writeHead(400);
+			res.write('One of fields is empty');
+			res.end();
 		}
 	});
 };

@@ -1,6 +1,6 @@
 const defaultRoute = (req, res) => {
-	res.writeHead(404);
-	res.write('File not found');
+	res.writeHead(400);
+	res.write('Bad request');
 	res.end();
 };
 
