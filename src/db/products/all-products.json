@@ -1,0 +1,8 @@
+[
+	{ "Name": "Cheese", "Price": 2.5, "Location": "Refrigerated foods", "id": "1" },
+	{ "Name": "Crisps", "Price": 3, "Location": "the Snack isle", "id": "12" },
+	{ "Name": "Pizza", "Price": 4, "Location": "Refrigerated foods", "id": "13" },
+	{ "Name": "Chocolate", "Price": 1.5, "Location": "the Snack isle", "id": "14" },
+	{ "Name": "Self-raising flour", "Price": 1.5, "Location": "Home baking", "id": "15" },
+	{ "Name": "Ground almonds", "Price": 3, "Location": "Home baking", "id": "16" }
+]
