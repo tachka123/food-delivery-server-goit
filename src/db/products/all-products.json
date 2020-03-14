@@ -1,26 +1,8 @@
 [
-	{
-		"id": 19112831,
-		"sku": 1120001,
-		"name": "Пицца Пепперони с томатами",
-		"description": "Пицца пепперони - очень популярный вид пиццы как в Европе, так и в Америке. Она получила свое название благодаря основному ингредиенту солями пепперони, который и отличает ее от всех остальных видов пицц. Он имеет острый вкус и при запекании покрывается хрустящей жирной корочкой.",
-		"price": "100",
-		"currency": "UAN",
-		"creatorId": 1,
-		"created": "21-08-2018",
-		"modified": "21-08-2018",
-		"categories": ["pizza"]
-	},
-	{
-		"id": 19112832,
-		"sku": 1120002,
-		"name": "Пицца Маргарита",
-		"description": "Пожалуй, самая популярная в мире, даже меню любой пиццерии начинается, как правило, именно с неё. Состав этой пиццы необычайно прост, её основные ингредиенты: сыр моцарелла, спелые помидоры и листья свежего базилика, которые придают ей неповторимый вкус и аромат.",
-		"price": "80",
-		"currency": "UAN",
-		"creatorId": 1,
-		"created": "21-08-2018",
-		"modified": "21-08-2018",
-		"categories": ["pizza"]
-	}
+	{ "Name": "Cheese", "Price": 2.5, "Location": "Refrigerated foods", "id": "1" },
+	{ "Name": "Crisps", "Price": 3, "Location": "the Snack isle", "id": "12" },
+	{ "Name": "Pizza", "Price": 4, "Location": "Refrigerated foods", "id": "13" },
+	{ "Name": "Chocolate", "Price": 1.5, "Location": "the Snack isle", "id": "14" },
+	{ "Name": "Self-raising flour", "Price": 1.5, "Location": "Home baking", "id": "15" },
+	{ "Name": "Ground almonds", "Price": 3, "Location": "Home baking", "id": "16" }
 ]

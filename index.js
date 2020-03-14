@@ -1,4 +1,4 @@
 const { port } = require('./config');
-const serverStart = require('./src/server');
+const startServer = require('./src/server');
 
-serverStart(port);
+startServer(port);

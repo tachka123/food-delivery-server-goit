@@ -1,15 +1,16 @@
-const http = require('http');
-const requestServer = require('./requestHandlers/requestHandler');
+'use strict';
+const express = require('express');
+const bodyParser = require('body-parser');
+const router = require('./router/router');
 
-const serverStart = port => {
-	const server = http.createServer(requestServer);
+const app = express();
+const startServer = port => {
+	app.use(bodyParser.urlencoded({ extended: false }))
+		.use(bodyParser.json())
+		.use('/', router);
 
-	server.listen(port, err => {
-		if (err) {
-			throw err;
-		}
-		console.log(`Server is listnening on port ${port}`);
-	});
+	app.listen(port);
+	console.log(`Server has been started at ${port}`);
 };
 
-module.exports = serverStart;
+module.exports = startServer;
