@@ -23,7 +23,7 @@
 	"homepage": "https://github.com/tachka123/food-delivery-server-goit#readme",
 	"dependencies": {
 		"body-parser": "^1.19.0",
-		"date-and-time": "^0.13.1",
+		"date-and-time": "^0.14.2",
 		"express": "^4.17.1",
 		"morgan": "^1.9.1",
 		"uuid": "^7.0.2"
